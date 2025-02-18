@@ -34,7 +34,7 @@ This folder contains Python scripts used to generate interactive dashboards and 
 - Disparities & Equity: Differences in healthcare costs based on demographics and geography.
 - Policy Impact: Effects of healthcare policies on hospital utilization and spending.
 
-🔧 Customization
+## 🔧 Customization
 - Modify visualizations.py to change chart styles, colors, or data representations.
 - Add new filters and controls to dashboard1.py, dashboard2.py, or dashboard3.py for enhanced interactivity.
 - Update data_processing.py to process additional datasets or improve data cleaning
