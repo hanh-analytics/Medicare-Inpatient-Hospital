@@ -2,16 +2,25 @@
 
 ## 1. Utilization and Access
 
-![barchart](2021/myworkspace/hospital_admission_line.png)
+![barchart](https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/blob/e6c24bfa9b2bbb3b09685f1100bd12f761e37a3c/visualizations/hospital_admission_line.png)
 
-- **Trend in Hospital Admissions Over the Years**: 
+- **Trend in Hospital Admissions Over the Years**:
 
-   - Visualize the trend of hospital admissions (e.g., discharges) over the years.
-   - Identify any patterns or anomalies (e.g., peak periods).
-   - Highlight any significant events that may have impacted hospital admissions (e.g., COVID-19).
+   - Overall, there was a significant decline in hospital admissions from 2016 to 2021. In 2016, the number of admissions was approximately 6.7 million, gradually decreasing to 6.3 million in the following years. A sharp decline of about 1 million admissions occurred in 2020, followed by a continued drop to 5.1 million in 2021.
+      
+   - The most significant drop occurred in 2020, likely due to the **COVID-19 pandemic**. Many hospitals postponed elective procedures and non-emergency admissions to prioritize COVID-19 patients. Patients also avoided hospitals due to **fear of infection**, leading to a reduction in non-COVID-related hospitalizations.
+     
+   - The gradual drop in hospital admissions from 2016 to 2019 was likely due to the shift toward outpatient care, value-based payment models reducing the need for inpatient stays.
+ 
+   - Additionally, **home healthcare services, telemedicine, and alternative care models** provided more options outside hospitals.
+ 
+   - Insurance policies and stricter admission criteria may have also contributed to fewer hospitalizations before the sharp decline in 2020 due to COVID-19.
 
 - **Inpatient Hospital Utilization by Geographic Region**:
-   - Break down the hospital admissions by region.
+
+![map](https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/blob/e6c24bfa9b2bbb3b09685f1100bd12f761e37a3c/visualizations/geographic_utilization.png)
+
+   - California had the highest program payment among the states in the United States, at around $400,000. Florida and Texas were in the second and third place for having the highest program payment, at around $380k and $352k. In the east, most states had higher than $200k program payment, especially New York ($300k), Illinois ($230k), Pennsylvania ($227k). Other states from Oregon, Nevada to the central of the United States had very low cost (under $100k). Three states in the Northern East (Vermont, Hampshire, Maine) and 2 islands Alaska and Hawaii had the lowest program payment.   
    - Identify regions with high and low utilization.
    - Discuss potential factors contributing to regional differences (e.g., healthcare access, hospital density).
 
