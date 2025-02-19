@@ -166,18 +166,44 @@
     
    - **Summary**: While high total program payments can be driven by both high patient volume and high per-discharge costs, some states (e.g., Alaska) show that high per-discharge costs do not always translate to the highest total program payments due to lower utilization.
 
----
 
 ## 3. Equity and Disparities
 
 - **Demographic Groups Facing Higher Program Payments or Out-of-Pocket Costs**:
 
-![demo](https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/blob/557bbe64f870b86bf59ee9a59a6e42cac5a04c78/visualizations/Program_payments_strip_plot.png)
+![demo](https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/blob/2b2c0bde79b3db9cd2c8a6839936b4daf3656ff6/visualizations/stripplot.png)
 
+   - **Age**
+   
+   - Program payments were highest for the older age groups, particularly 65-74 and 75-84. The 65-74 age group had the highest program payments at $46B, followed by the 75-84 group at $40B. The 85-94 age group ranked third, with payments around $19B. In contrast, all age groups under 65 had program payments below $20B. 
 
-   - Identify demographic groups that face higher program payments or out-of-pocket costs.
-   - Explore reasons behind these disparities (e.g., underlying health conditions, healthcare access).
-   - Consider if these groups may benefit from policy interventions.
+   - Possible reasons for this trend:
+      -    As people age, they are more likely to require hospitalization, surgeries, chronic disease management, and specialized care, leading to higher program payments.
+    
+      -   Conditions like heart disease, diabetes, and respiratory disorders are more common in older populations, leading to more frequent hospital admissions and longer hospital stays.
+    
+      -   Younger individuals generally have fewer chronic conditions and may have alternative insurance options (e.g., employer-sponsored plans, Medicaid), leading to lower Medicare program payments.
+    
+ - **Sex**
+   
+    -   Both genders had similar program payments, around $65B, **with males receiving slightly higher payments than females**.
+    
+    -   Men generally experience higher rates of certain chronic conditions (e.g., heart disease, hypertension, and diabetes), leading to increased hospitalizations and medical costs.
+  
+    -   Some medical procedures and treatments (e.g., cardiac surgeries, organ transplants) that are more common among men tend to have higher costs, contributing to the higher program payments for males.
+
+   - **Race**:
+
+      -  Non-Hispanic White beneficiaries accounted for the highest program payments, at nearly $100M, followed by Black Americans, whose payments were significantly lower by approximately $86M. Other racial groups had average program payments below $10M.
+      
+      -  Possible reasons: Non-Hispanic White individuals make up the largest proportion of Medicare beneficiaries, leading to higher overall program payments.
+    
+      -  Generally, as program payments increase, average cost-sharing (deductibles, copayments, and coinsurance) might also rise. This is because higher-cost services or longer hospital stays result in both higher **total payments by Medicare** and **higher out-of-pocket costs for beneficiaries**. A graph is made to demonstrate the correlation between the total program payments and average cost-sharing:
+    
+      -  Strong Positive Correlation (r > 0.5)
+Higher-cost procedures require higher patient out-of-pocket contributions.
+States/hospitals with high Medicare spending also tend to have higher patient costs.
+Wealthier states or high-cost healthcare regions drive both program payments & cost-sharing up.
 
 - **Geographic Areas with Lower Access to Inpatient Hospital Care**:
    - Examine regions with limited access to inpatient hospital care.
