@@ -164,7 +164,7 @@
     
       - Lower-cost states (e.g., central U.S., Oregon, Nevada) also had lower total program payments, indicating lower utilization and possibly lower costs per case.
     
-      - **Summary**: While high total program payments can be driven by both high patient volume and high per-discharge costs, some states (e.g., Alaska) show that high per-discharge costs do not always translate to the highest total program payments due to lower utilization.
+   - **Summary**: While high total program payments can be driven by both high patient volume and high per-discharge costs, some states (e.g., Alaska) show that high per-discharge costs do not always translate to the highest total program payments due to lower utilization.
 
 ---
 
