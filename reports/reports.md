@@ -200,52 +200,147 @@
     
       -  Generally, as program payments increase, average cost-sharing (deductibles, copayments, and coinsurance) might also rise. This is because higher-cost services or longer hospital stays result in both higher **total payments by Medicare** and **higher out-of-pocket costs for beneficiaries**. A graph is made to demonstrate the correlation between the total program payments and average cost-sharing:
     
-      -  Strong Positive Correlation (r > 0.5)
-Higher-cost procedures require higher patient out-of-pocket contributions.
-States/hospitals with high Medicare spending also tend to have higher patient costs.
-Wealthier states or high-cost healthcare regions drive both program payments & cost-sharing up.
+   ![plot](https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/blob/43a38fde68a09f5a102698220178fd3563efb841/visualizations/corr.png)
+    
+      -  As we can see, there is a strong positive correlation:
+        
+         - Higher-cost procedures require higher patient out-of-pocket contributions.
+       
+         - States/hospitals with high Medicare spending also tend to have higher patient costs.
+       
+         - Wealthier states or high-cost healthcare regions drive both program payments & cost-sharing up.
+           
 
-- **Geographic Areas with Lower Access to Inpatient Hospital Care**:
-   - Examine regions with limited access to inpatient hospital care.
-   - Discuss the impact of low access on patient outcomes and equity.
-   - Investigate whether underserved regions face financial strain or poor healthcare outcomes.
+- **Health Outcomes Correlated with Hospital Type**:
 
-- **Health Outcomes Correlated with Geographic Location or Hospital Type**:
-   - Analyze the correlation between health outcomes (e.g., mortality rates, readmissions) and geographic location or hospital type.
-   - Discuss the influence of hospital quality, accessibility, and geographic disparities on patient outcomes.
+![health](https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/blob/43a38fde68a09f5a102698220178fd3563efb841/visualizations/Bar_chart_health_outcomes.png)
 
----
+   - The average discharged dead in short-stay hospitals was the highest, at 350k, while all other hospital types had under 50k average dischard dead.
+     
+   - Possible reasons: Short-stay hospitals handle a significantly larger number of patients compared to specialized hospitals, increasing the absolute number of deaths. Moreover, short-stay hospitals conduct major surgeries and high-risk medical interventions, increasing the likelihood of post-operative mortality.
+
+
 
 ## 4. Hospital Performance and Characteristics
 
 - **Types of Hospitals Delivering Highest or Lowest Program Payments**:
-   - Identify which types of hospitals are associated with the highest or lowest program payments.
-   - Discuss factors contributing to these differences (e.g., hospital size, teaching affiliation).
-   - Explore whether these payments are tied to efficiency or care quality.
+![log](https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/blob/43a38fde68a09f5a102698220178fd3563efb841/visualizations/Hospital_Program_Payment_Comparison.png)
+
+   - When comparing the hospital payment with hospital types, Short-stay hospitals received the highest program payments. Critical Access Hospitals, Long-Term Care Hospitals, Inpatient Psychiatric Facilities, and Inpatient Rehabilitation Facilities had slightly lower but relatively evenly distributed payments. Religious Nonmedical Health Care Institutions had the lowest program payments.
+     
+   - Possible explanations: 
+      
+      - Short-stay hospitals handle a large number of admissions and discharges, contributing to their high total program payments.
+    
+      - Critical Access Hospitals, Long-Term Care Hospitals, and Inpatient Rehabilitation Facilities typically have longer patient stays but lower patient volume, leading to lower overall program payments.
+    
+      - Facilities like Religious Nonmedical Health Care Institutions often provide limited, non-medical treatments, resulting in the lowest program payments.
 
 - **Impact of Hospital Size and Affiliation on Patient Costs and Care Quality**:
-   - Explore how hospital size (e.g., small vs. large hospitals) and affiliation (e.g., teaching vs. non-teaching) impact patient costs and care quality.
-   - Analyze whether larger hospitals tend to have higher or lower costs and whether teaching hospitals offer higher quality care.
+  ![impact](https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/blob/43a38fde68a09f5a102698220178fd3563efb841/visualizations/Impact_Hospital%20Size_Affiliation_on_Costs.png)
+  
+   - The largest bubble, representing Short-Stay Hospitals, indicates that they have the largest hospital size and the highest program payments ($110B). This suggests that Short-Stay Hospitals account for the majority of Medicare inpatient spending, as they handle high patient volumes and provide a broad range of medical services.
+     
+   - Inpatient Rehabilitation Facilities had the highest program payments among non-short-stay hospitals, slightly above other specialized hospitals.This is likely due to longer lengths of stay and specialized rehabilitative care, which can be costly despite lower patient volumes compared to Short-Stay Hospitals.
+ 
+   - The Critical Access Hospitals, Inpatient Psychiatric Facilities, and Long-Term Care Hospitals had similar bubble sizes and program payments (all slightly lower than Inpatient Rehabilitation Facilities). This suggests that despite different hospital functions, their overall costs remain comparable, potentially due to Medicare payment structures and patient utilization patterns.
+ 
+   - Other Hospitals (Federal Emergency, Veterans Affairs, and foreign hospitals), Children's Hospitals, and Religious Nonmedical Health Care Institutions had the smallest program payments and bubble sizes. Their lower costs may be due to limited inpatient admissions, specialized patient populations, or alternative funding sources (e.g., federal government funding for VA hospitals).
 
----
 
 ## 5. Policy Implications
 
 - **Observable Impacts of Policy Changes Over the Years**:
-   - Identify key policy changes that may have impacted hospital utilization, program payments, or patient costs (e.g., MACRA, Site-Neutral Payment Policy, COVID-19).
-   - Examine trends in the data before and after policy changes to assess their impact.
-   - Discuss whether any policy adjustments have improved or worsened healthcare access, costs, or quality.
 
-- **Hospitals or Regions That Might Benefit from Interventions**:
-   - Identify which hospitals or regions could benefit most from interventions aimed at improving equity and cost efficiency.
-   - Consider interventions that could reduce disparities (e.g., increased funding for underserved areas, targeted financial assistance).
-   - Propose actions based on findings that could improve healthcare access and efficiency in specific regions or hospital types.
+![Policy](https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/blob/43a38fde68a09f5a102698220178fd3563efb841/visualizations/Observable_Impacts_of_Policy_Changes.png)
 
----
+   - In 2015, there were 11 million discharges, coinciding with the announcement of the Medicare Access and CHIP Reauthorization Act (MACRA). This policy marked a significant shift in Medicare reimbursement, moving from a fee-for-service model toward value-based payments, incentivizing efficiency and quality over volume.
+
+- By 2020, the total number of discharges had dropped sharply to 8.7 million, influenced by several key factors:
+
+   - The implementation of the Site-Neutral Payment Policy, which reduced incentives for inpatient admissions by aligning payments across care settings.
+
+   - The impact of the COVID-19 Public Health Emergency (PHE), which led to a decline in elective procedures, changes in hospital utilization, and a shift towards outpatient and telehealth services.
+
+   - Ongoing Medicare reforms emphasizing cost efficiency and alternative payment models, reducing unnecessary hospital admissions.
+
 
 ## Conclusion
 
-- **Key Insights and Recommendations**:
-   - Summarize the main findings from the dashboard and analysis.
-   - Provide actionable recommendations for policymakers, hospital administrators, or other stakeholders.
-   - Suggest areas for further research or data collection to enhance understanding of healthcare utilization, payments, and policy impacts.
+- **Key Insights & Recommendations**
+  
+   1. Trends in Hospital Utilization & Admissions:
+      
+   - Hospital admissions gradually declined from 2016 to 2019, followed by a sharp drop in 2020, likely due to Medicare policy changes and the COVID-19 pandemic.
+     
+   - Alaska, Maryland, and California had the highest program payments per discharge. **Recommendation:** Target cost-efficiency initiatives in high-cost states (e.g., Alaska, Maryland, California) to assess reimbursement models and pricing structures.
+ 
+   2. Financial Aspects & Cost Burdens:
+
+   - Medicare program payments increased from 2016 to 2019, before dropping significantly in 2020 due to COVID-19, then stabilizing slightly in 2021. **Recommendation:** Enhance value-based care adoption to further control costs and reduce unnecessary hospitalizations.
+ 
+   -  Alaska, Maryland, and California had the highest program payments per discharge, suggesting higher healthcare costs, reimbursement rates, or hospital pricing structures in these states. **Recommendation:** Analyze drivers of high program payments per discharge in select states and consider alternative payment strategies.
+ 
+   3. Equity & Disparities in Healthcare Costs:
+ 
+   - Non-Hispanic White beneficiaries had the highest total program payments and cost-sharing amounts, while Black Americans and other racial groups had significantly lower totals. **Recommendation:** Investigate racial and socioeconomic differences in program payments and utilization to ensure equitable healthcare access.
+ 
+   - Dual-Eligibility (MME) Impact on Costs: Beneficiaries with Medicare-Medicaid dual eligibility (MME) had significantly lower cost-sharing amounts than non-MME beneficiaries, suggesting Medicaid’s role in reducing out-of-pocket costs for low-income individuals. **Recommendation:** Enhance support for dual-eligible (MME) beneficiaries to lower financial burdens for low-income populations.
+
+   4. Hospital Performance & Structure:
+
+  - Impact of Hospital Size & Affiliation: Short-stay hospitals were significantly larger and had higher payments ($110B), while smaller hospitals (e.g., Critical Access, Inpatient Rehab, Psychiatric) received much lower payments (<$20B).
+ 
+  - **Recommendation:**
+     
+     - Evaluate hospital efficiency by correlating program payments with patient outcomes to identify high-performing hospitals.
+   
+     - Assess performance of lower-utilization hospital types (e.g., Inpatient Psychiatric Facilities, Religious Nonmedical Hospitals) to determine their role and funding efficiency.
+   
+## **Further Exploration for Deeper Insights**  
+
+For those who want to **dig deeper into this project**, here are some advanced analytical approaches and extensions:  
+
+### **1. Advanced Statistical Analysis & Predictive Modeling**  
+- **Time-Series Forecasting:**  
+  - Use models like **ARIMA, Prophet, or LSTM** to **predict future Medicare program payments and hospital utilization** trends.  
+  - Identify potential **seasonal patterns** in inpatient hospital discharges and spending.  
+- **Regression Analysis:**  
+  - Perform **linear regression** to analyze the relationship between **program payments, cost-sharing, and utilization rates** across different hospital types and demographics.  
+  - Use **multivariate regression** to adjust for confounders such as age, region, and hospital size.  
+- **Clustering Analysis:**  
+  - Apply **K-Means or Hierarchical Clustering** to group hospitals based on efficiency, cost, and utilization patterns.  
+  - Identify which hospitals perform best in cost-per-discharge and patient outcomes.  
+
+### **2. Geographic & Demographic Disparities Analysis**  
+- **Heatmaps & Spatial Analysis:**  
+  - Use **GIS tools (e.g., QGIS, Python’s Geopandas, or Tableau)** to visualize **regional disparities in Medicare spending and utilization**.  
+  - Investigate whether certain geographic areas have **lower access to inpatient hospital care**.  
+- **Demographic Risk Factor Analysis:**  
+  - Perform **statistical comparisons (T-tests, ANOVA)** to determine whether certain **age, race, or socioeconomic groups** face significantly higher hospital costs or lower accessibility.  
+
+### **3. Cost Efficiency & Hospital Performance Evaluation**  
+- **Cost-per-Outcome Analysis:**  
+  - Compare **cost per discharge and cost per inpatient day** across different hospital types to identify **high-efficiency facilities**.  
+- **Hospital Benchmarking:**  
+  - Evaluate hospitals based on **readmission rates, mortality rates, and patient outcomes** to identify facilities providing **high-value care**.  
+
+### **4. Exploring Policy Impacts on Medicare Utilization**  
+- **Impact of Policy Changes (2015-2021):**  
+  - Examine the effects of key Medicare policies (e.g., **MACRA 2015, Site-Neutral Payment Policy 2020**) on **discharge trends and hospital payments**.  
+  - Conduct **difference-in-differences (DiD) analysis** to quantify the impact of policy shifts.  
+- **COVID-19 Impact Analysis (2020-2021):**  
+  - Investigate how COVID-19 **disrupted inpatient hospital utilization** and program payments.  
+  - Compare **pre-pandemic vs. post-pandemic spending and patient demographics**.  
+
+### **5. Scaling the Project with Big Data & Cloud Technologies**  
+- **Big Data Pipelines:**  
+  - Process large-scale Medicare datasets using **Hadoop or Apache Spark** for faster computation.  
+- **Cloud Deployment:**  
+  - Deploy dashboards and visualizations using **AWS (S3, Lambda, Glue) or GCP (BigQuery, Cloud Functions)**.  
+  - Host a **Medicare insights dashboard using Streamlit or Dash on cloud platforms**.  
+
+
+
+
+  
