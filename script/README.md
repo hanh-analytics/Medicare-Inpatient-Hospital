@@ -17,7 +17,12 @@ This folder contains Python scripts for generating interactive dashboards using 
 - **`dashboard3.py`** – Hospital Performance & Policy Impact  
   - Evaluates hospital performance based on **program payments and utilization**.  
   - Investigates the influence of **hospital size and affiliation** (e.g., teaching, rural).  
-  - Assesses the **impact of policy changes** on hospital efficiency and patient costs.  
+  - Assesses the **impact of policy changes** on hospital efficiency and patient costs.
+
+- **`cor.py`** – Correlation Analysis  
+  - Generates a correlation graph between **Medicare program payments** and **cost-sharing** (deductible + coinsurance).  
+  - Uses **Plotly** to create a scatter plot with a trend line.  
+  - Helps identify how strongly cost-sharing relates to total program spending.  
 
 ## 🚀 Running the Dashboards Locally  
 
