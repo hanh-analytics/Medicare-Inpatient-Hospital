@@ -3,7 +3,7 @@ import plotly.express as px
 import us
 import dash
 from dash import dcc, html
-import streamlit as st
+
 
 def create_admissions_line_chart(file_path, chart_title="Trend in Hospital Admissions Over the Years"):
     """Creates and returns a line chart of hospital admissions over time."""
