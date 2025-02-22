@@ -22,7 +22,12 @@ This folder contains Python scripts for generating interactive dashboards using 
 - **`cor.py`** – Correlation Analysis  
   - Generates a correlation graph between **Medicare program payments** and **cost-sharing** (deductible + coinsurance).  
   - Uses **Plotly** to create a scatter plot with a trend line.  
-  - Helps identify how strongly cost-sharing relates to total program spending.  
+  - Helps identify how strongly cost-sharing relates to total program spending.
+ 
+- **`app.py`** - Multi-Dashboard Application
+  - Implements a multi-dashboard application for Medicare inpatient hospital data visualization.
+  - Enables interactive data exploration with filters for year, demographics, and hospital types.
+  - Supports AWS deployment, sourcing data from GitHub or AWS S3.
 
 ## 🚀 Running the Dashboards Locally  
 
