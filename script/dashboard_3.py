@@ -3,7 +3,7 @@ import plotly.express as px
 import dash
 import numpy as np
 from dash import dcc, html
-import streamlit as st
+
 # Load Excel file
 file_path = "https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/raw/main/database/CPS%20MDCR%20INPT%202021.xlsx"
 extra_file = "https://github.com/hanh-analytics/Medicare-Inpatient-Hospital/raw/main/database/CPS%20MDCR%20INPT%202020.xlsx"
