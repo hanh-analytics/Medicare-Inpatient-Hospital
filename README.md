@@ -76,6 +76,18 @@ To set up and run the dashboard, follow these steps:
 
 In this analysis, a **two-sample t-test** was conducted to compare the mean total discharges before (2015–2018) and after (2019–2021) a policy change. The test aimed to assess whether the policy change had a statistically significant impact on hospital discharges. The result indicated **no significant difference** between the two periods, suggesting that the policy change did not meaningfully affect discharge rates. However, factors like the COVID-19 pandemic in 2020 may have influenced the data, warranting further investigation.
 
-3. Predictive Modeling: Development of models to predict hospital efficiency by identifying high-efficiency hospitals based on program payments relative to utilization (i.e., cost per discharge or per day of care). Variables considered include program payments, hospital type, discharges, days of care, hospital size, and region.
+## 3. Predicting Cost Efficiency Based on Hospital Characteristics: 
 
-The project provides insights into how healthcare policies and interventions affect Medicare utilization and payments, with an emphasis on visual representation for better decision-making.
+- Goal: Identify which hospital characteristics (location, bed size, medical school affiliation, control type) contribute to lower program payments per discharge or per day of care.
+- Why it’s useful: Helps policymakers and hospitals improve efficiency by analyzing what makes a hospital cost-effective.
+- Features:
+
+  - Hospital-Level Factors: Location, bed size, teaching status, type of control (public/private).
+
+  - Utilization Factors: Total discharges, total days of care.
+ 
+  - Entitlement Type: Age-based vs. disability-based Medicare eligibility.
+ 
+  - Target Variable: Cost per Discharge = (Total Payments / Total Discharges).
+  
+- Model Type: Regression (Linear Regression, XGBoost, Random Forest)
