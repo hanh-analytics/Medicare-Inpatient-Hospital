@@ -76,7 +76,7 @@ To set up and run the dashboard, follow these steps:
 
 In this analysis, a **two-sample t-test** was conducted to compare the mean total discharges before (2015–2018) and after (2019–2021) a policy change. The test aimed to assess whether the policy change had a statistically significant impact on hospital discharges. The result indicated **no significant difference** between the two periods, suggesting that the policy change did not meaningfully affect discharge rates. However, factors like the COVID-19 pandemic in 2020 may have influenced the data, warranting further investigation.
 
-## 3. Predicting Cost Efficiency Based on Hospital Characteristics: 
+## 3. Predicting Cost Efficiency Based on Hospital Characteristics
 
 - Goal: Identify which hospital characteristics (location, bed size, medical school affiliation, control type) contribute to lower program payments per discharge or per day of care.
 - Why it’s useful: Helps policymakers and hospitals improve efficiency by analyzing what makes a hospital cost-effective.
