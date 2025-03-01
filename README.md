@@ -78,9 +78,10 @@ In this analysis, a **two-sample t-test** was conducted to compare the mean tota
 
 ## 3. Predicting Cost Efficiency Based on Hospital Characteristics
 
-- Goal: Identify which hospital characteristics (location, bed size, medical school affiliation, control type) contribute to lower program payments per discharge or per day of care.
-- Why it’s useful: Helps policymakers and hospitals improve efficiency by analyzing what makes a hospital cost-effective.
-- Features:
+- **Goal**: Identify which hospital characteristics (location, bed size, medical school affiliation, control type) contribute to lower program payments per discharge or per day of care.
+- **Why it’s useful**: Helps policymakers and hospitals improve efficiency by analyzing what makes a hospital cost-effective.
+
+- **Features**:
 
   - Hospital-Level Factors: Location, bed size, teaching status, type of control (public/private).
 
@@ -90,4 +91,4 @@ In this analysis, a **two-sample t-test** was conducted to compare the mean tota
  
   - Target Variable: Cost per Discharge = (Total Payments / Total Discharges).
   
-- Model Type: Regression (Linear Regression, XGBoost, Random Forest)
+- **Model Type**: Regression (Linear Regression, XGBoost, Random Forest)
